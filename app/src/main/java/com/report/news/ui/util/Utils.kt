@@ -10,7 +10,6 @@ import java.net.URL
 object Utils {
 
     fun getBitmapFromURL(src: String?): Bitmap? {
-        Log.d("AAA","getBitmapFromURL " + src)
         return try {
             val url = URL(src)
             val connection =
