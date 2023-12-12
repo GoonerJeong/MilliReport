@@ -45,8 +45,6 @@ class NewsRepositoryImpl constructor(
         else{
             flow.emit(HeadlineNewsUiState.Error(e))
         }
-
-        flow.emit(HeadlineNewsUiState.Success(dbDatas))
     }
 
     override suspend fun updateRetrieveNews(obj : NewsEntity) {

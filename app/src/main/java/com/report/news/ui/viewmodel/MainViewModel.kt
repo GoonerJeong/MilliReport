@@ -65,7 +65,7 @@ class MainViewModel @Inject internal constructor(
 
     fun updateRetrieveNews(data : Headline){
         viewModelScope.launch(Dispatchers.IO) {
-            async { updateRetrieveNewsUseCase(data.toNewsEntity()) }.await()
+            updateRetrieveNewsUseCase(data.toNewsEntity())
         }
     }
 }
